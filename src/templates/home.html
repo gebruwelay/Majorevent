@@ -1,0 +1,66 @@
+<section >
+    <button  href="#" class="btn-info" ng-click="infoFunc()" style="background-color: gray;opacity: 0.8" id="info">+ About</button>
+    <p ng-show="info" style="background-color: gray;opacity: 0.8;color: white;text-align: left;margin-top: 1%;font-family:'Times New Roman'
+    ;display:inline-block;font-size: 1.3em" >This geo-game is freely available for volunteers to generate useful information from the aerial crowd imageries like the football match, party, annual event parades, and festivals. Here, you will play on Mönchengladbach, Germany football match aerial crowd imagery after the game in 2013.  I would like to ask you to deliver correct data by drawing a polygon over the crowd of people on the aerial imagery by selecting either  High crowded or medium crowded or less crowded.
+
+        <br/><br/>
+        After all, if you submit correct data you will see accurate results that help you to navigate and find free space within the crowd.<br/>
+        Additionally, the data is useful to avoid dangerous(e.g. stampede) situations of the crowd at early stage.</p>
+
+</section>
+<section >
+  <button href="#" class="btn-info" ng-click="displayTip()"  id="ins" style="background-color: gray;opacity: 0.8">+ Instructions</button>
+
+</section>
+<ul ng-show="show"
+    style="background-color: gray;opacity: 0.8;color: white;text-align: left;margin-top: 1%;font-family:'Times New Roman'
+    ;display:inline-block;font-size: 1.3em" >
+    <li>
+        Polygon creation
+        <ul type="none">
+            <li>
+                I) Click the polygon on top right corner to create polygons on the aerial crowd image.
+            </li>
+            <li>
+                II) Draw the polygon over the peoples on the image showing either high or medium or low crowd density.
+            </li>
+            <li>
+                III) Click finish or close  each polygon before proceeding to the next polygon.
+            </li>
+            <li>
+                IV) Choose either high or medium or low crowd density for the drawn polygon.
+            </li>
+
+            <li>
+                V) Use cancel if you have any unncessary drawing of polygons.
+            </li>
+            <li>
+                VI) If you see an error or yellow color on the drawn polygon try to close or click finish.
+            </li>
+            <li>
+                VII) You can pan the aerial imagery to any direction to discover an undrawn crowd of people.
+            </li>
+        </ul>
+
+    </li>
+    <li>
+        Score
+        <ul type="none">
+            <li>
+                I) When you create many polygons with the three density catagories your score increase accordingly.
+            </li>
+            <li>
+                I) When you create one polygon with many vertices on correct data your score become high.
+            </li>
+            <li>
+                II) Allowed time for one image is 2 minutes.
+            </li>
+        </ul></li>
+
+</ul>
+<section >
+    <button href="#" class="btn-info" style="background-color: gray;opacity: 0.8" ng-click="map()">Start</button>
+</section >
+
+
+</div>
